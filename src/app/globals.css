@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0c;
+  --bg-raised: #141417;
+  --bg-surface: #1c1c21;
+  --bg-hover: #24242a;
+  --fg: #e8e6e3;
+  --fg-dim: #8a8890;
+  --fg-muted: #5c5a62;
+  --accent: #e8a030;
+  --accent-dim: rgba(232, 160, 48, 0.15);
+  --accent-glow: rgba(232, 160, 48, 0.3);
+  --danger: #e85050;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-light: rgba(255, 255, 255, 0.1);
+  --glass: rgba(14, 14, 16, 0.8);
+  --glass-light: rgba(28, 28, 33, 0.85);
+  --font-brand: 'Syne', sans-serif;
+  --font-ui: 'Outfit', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--fg-muted); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--fg-dim); }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 var(--accent-glow); }
+  70% { box-shadow: 0 0 0 6px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+.anim-fade-up {
+  animation: fadeUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.anim-slide-up {
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.anim-fade-in {
+  animation: fadeIn 0.2s ease-out both;
+}
+.anim-scale-in {
+  animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+/* Image card interactions */
+.img-card {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+.img-card:hover {
+  transform: scale(1.03);
+  z-index: 1;
+}
+.img-card.selected {
+  box-shadow: 0 0 0 2.5px var(--accent), 0 0 20px var(--accent-dim);
+}
+.img-card.selected:hover {
+  box-shadow: 0 0 0 2.5px var(--accent), 0 0 25px var(--accent-glow);
+}
+.img-card:hover .expand-btn,
+.img-card:hover .download-btn {
+  opacity: 1 !important;
+}
+
+/* Focus styles */
+input:focus-visible, textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-dim);
+}
+
+/* Selection highlight override */
+::selection {
+  background: var(--accent-dim);
+  color: var(--fg);
+}
